@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Комментарии</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="icon" href="images/carousel1.jpg">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarResponsive><span
+            class=navbar-toggler-icon></span></button>
+    <div class="collapse navbar-collapse" id=navbarResponsive>
+        <ul class="navbar-nav ml-auto nav-pills">
+            <li class="nav-item  navbar-li-index"><a href="index.html" class=nav-link>Главная</a></li>
+            <li class="nav-item  navbar-li-index"><a href="about.html" class=nav-link>О себе</a></li>
+            <li class=nav-item><a href="" class=nav-link>Портфолио</a></li>
+            <li class="nav-item"><a href="news.html" class=nav-link>Новости</a></li>
+            <li class="nav-item active"><a href="comments.html" class=nav-link>Гостевая книга</a></li>
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle nav-back-color" data-toggle="dropdown" href="#"
+                   role="button" aria-haspopup="true" aria-expanded="false">Методическая копилка</a>
+                <div class="dropdown-menu dropdown-menu-lg-right">
+                    <a class="dropdown-item" href="annotations.html">Аннотации к рабочим программам</a>
+                    <a class="dropdown-item" href="test.html">Тесты к урокам</a>
+                    <a class="dropdown-item" href="mp.html">Разработки внеурочных мероприятий</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-back-color" data-toggle="dropdown" href="#"
+                   role="button" aria-haspopup="true" aria-expanded="false">Внеурочная деятельность</a>
+                <div class="dropdown-menu dropdown-menu-lg-right">
+                    <a class="dropdown-item" href="project.html">Проект "Дети поют и играют для детей"</a>
+                    <a class="dropdown-item" href="odar.html">Работа с одаренными</a>
+                    <a class="dropdown-item" href="housework.html">Работа с обучающимися на дому</a>
+                    <a class="dropdown-item" href="work.html">Работа с обучающимися</a>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container fadeIn wow animated">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
+             style="font-family: 'Helvetica Neue',serif; width: 100%;">
+            <h2>Сайт учителя предметной области "Искусство"</h2>
+            <h1>Ильичева Евгения Михайловича</h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+            <form id="addComment" novalidate>
+                <div class="form-group">
+                    <label for="inputName" class="h5">Введите ваше имя</label>
+                    <p>
+                        <label class="text-muted">Не менее 6 символов</label>
+                    </p>
+                    <input type="text" class="form-control" id="inputName" placeholder="Ваше имя" >
+                </div>
+                <div class="form-group">
+                    <label for="inputText" class="h5">Текст сообщения</label>
+                    <p>
+                        <label class="text-muted">Не менее 10 символов</label>
+                    </p>
+                    <textarea type="text" class="form-control" id="inputText" placeholder="Текст сообщения"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-outline-info">Добавить комментарий</button>
+            </form>
+
+            <div class="media shadow-sm">
+                <img src="images/account.svg" class="mr-3 comment-image" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Исламова И.А.</h5>
+                    <span class="text-muted">10.10.2018</span>
+                    <h6>
+                        Спасибо за размещение интересных книг по искусству. Очень помогают детям в подготовке домашних
+                        заданий.
+                    </h6>
+                </div>
+            </div>
+
+            <div class="media shadow-sm">
+                <img src="images/account.svg" class="mr-3 comment-image" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Зульфия Вдовина, учитель музыки</h5>
+                    <span class="text-muted">15.11.2018</span>
+                    <h6>
+                        Евгений Михайлович! Большое Вам спасибо за программу «Музыкальная палитра искусств». Очень
+                        ценный, актуальный содержательный материал.
+                    </h6>
+                </div>
+            </div>
+
+            <div class="media shadow-sm">
+                <img src="images/account.svg" class="mr-3 comment-image" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Саттарова Алина</h5>
+                    <span class="text-muted">30.12.2018</span>
+                    <h6>
+                        С ребятами 9-х классов мы посетили музыкальный лекторий. Спасибо!! Было познавательно и
+                        интересно!
+                    </h6>
+                </div>
+            </div>
+
+            <div class="media shadow-sm">
+                <img src="images/account.svg" class="mr-3 comment-image" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Арестова И.А.</h5>
+                    <span class="text-muted">1.15.2019</span>
+                    <h6>
+                        Воспользовалась, Евгений Михайлович, Вашими музыкальными словариками. Очень помогают в работе!
+                        Хорошее подспорье к урокам. </h6>
+                </div>
+            </div>
+
+            <div class="media shadow-sm">
+                <img src="images/account.svg" class="mr-3 comment-image" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Шарафутдинова Алсу</h5>
+                    <span class="text-muted">27.02.2019</span>
+                    <h6>
+                        26 февраля 2019 г. Мы увидели концерт «В ритме вальса». Было очень ЗДОРОВО!! Живая музыка ни с
+                        чем не сравнима! Спасибо Евгений Михайлович за то, что организовали такое мероприятие!</h6>
+                </div>
+            </div>
+
+            <div class="media shadow-sm">
+                <img src="images/account.svg" class="mr-3 comment-image" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Асманова О.И.</h5>
+                    <span class="text-muted">20.04.2019</span>
+                    <h6>
+                        Дети лицея №35 г.Казани в очередной раз посетили наше медицинское учреждение ДРКБ с концертом.
+                        Ребятишки, находящиеся на длительном лечении имели возможность услышать живую музыку и
+                        прикоснуться к инструментам и в целом к искусству. Пели песни, читали стихи. Встреча была очень
+                        трогательной. Это несомненно способствует выздоровлению, поднимает дух болеющих, даёт надежду и
+                        силы! Спасибо, организатору Ильичеву Е.М., учителю искусства и всем детям-участникам данной
+                        акции! Огромное человеческое спасибо за ваши добрые дела!!
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script src="scripts/comments.js" type="module"></script>
+</body>
+
+<footer>
+    <hr>
+    <div style="height: 4rem;" class="text-center fadeIn wow animated">
+        <span style="font-size: 1rem">(c) Ильичев Евгений Михайлович, 2018.</span>
+    </div>
+</footer>
+</html>
